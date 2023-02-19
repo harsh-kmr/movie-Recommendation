@@ -1,12 +1,12 @@
 import pickle
 from flask import Flask,render_template,request
 import numpy as np
-import tensorflow as tf
+
 
 #open pickle file
 movies = pickle.load(open('movies.pkl','rb'))
 similarity_matrix = pickle.load(open('similarity_matrix.pkl','rb'))
-sparse_matrix = pickle.load(open('sparse_mat.pkl','rb'))
+sparse_matrix = pickle.load(open('sparse_mat_df.pkl','rb'))
 popular_df = pickle.load(open('popular.pkl','rb'))
 
 #app
